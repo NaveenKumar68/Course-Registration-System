@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
+    <script src="script.js"></script>
+    <title>LearnHUB</title>
+    <style>
+      #login{
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand"><h2>Learn<span class="text-warning">HUB</span></h2></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">What You'll Learn</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instructors</a>
+            </li>&emsp;
+            <li class="nav-item">
+              <div class="dropdown" id="loginButton">
+                
+                <select class="form-control " id="course" name="course" required>
+                  <option value=""><img src="img/login.png" alt=""></option>
+                  <option value="Logout">Logout</option>
+                  <option value="CSS">CSS</option>
+                </select>
+            </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- login popup -->
+    <!-- <div class="popup" id="popup-1">
+      <div class="overlay"></div><div class="content">
+        <div class="close-btn align-items-center" onclick="togglePopup()">&times;</div>
+        <form action="index.html">
+          <div class="container w-75 p-5">
+            <h2 class="text-center text-dark">Login</h2>
+          <div class="card align-items-center text-center p-4 bg-dark text-light" id="login">
+          <div class="form-group row w-50 align-items-center">
+            User Name:
+            <input type="text" class="form-control col-8" id="name" name="name" placeholder="Enter name" required>
+          </div><br>
+          <div class="form-group row w-50 align-items-center text-center">
+            Password:
+            <input type="password" class="form-control col-8" id="pw" name="pw" placeholder="Enter name" required>
+          </div><br>
+          <div class="btn">
+            <button class="btn btn-primary " name="login">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+          </div>
+          </div>
+          </div>
+        </form> -->
+      
+      <!-- </div>
+    </div> -->
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Welcome to <span class="text-primary">Future of Learning</span></h1>
+            <p class="lead my-4">
+                At <b>Learn<span class="text-warning">HUB</span></b>, we believe that education should be accessible to everyone, no matter where they are or what their background may be. We're on a mission to transform the way people learn by offering a diverse range of high-quality courses that are completely free. Whether you're looking to enhance your skills, explore new subjects, or advance your career, our online courses provide an opportunity for anyone to pursue their passions and interests. The future of learning starts here. Welcome aboard!
+            </p>
+            <a href="course.html"><button
+                class="btn btn-primary btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#enroll"
+              >
+                Start The Enrollment
+              </button></a>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="img/showcase.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Learn Sections -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="img/fundamentals.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Learn The Fundamentals</h2>
+            <p class="lead">
+                Fundamentals of web development encompass the essential concepts, technologies, and practices required to create and maintain websites.
+            </p>
+            <p>
+                Mastering these fundamentals is crucial for web developers to create effective, user-friendly, and secure websites and web applications. It provides the knowledge and skills necessary to design, build, and maintain web solutions that meet the needs of users and businesses.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Learn React</h2>
+            <p class="lead">
+                React is an open-source JavaScript library for building user interfaces, known for its component-based architecture and efficient Virtual DOM rendering. It simplifies the creation of interactive and dynamic web applications.
+            </p>
+            <p>
+                Whether you're a seasoned developer or just starting your journey into web development, React is a powerful tool to have in your toolkit. It offers a clean, declarative syntax, excellent developer tools, and a vibrant community that continuously contributes to its growth. With React, you can create stunning, high-performance web applications that offer a fantastic user experience. So, get ready to dive into the world of React and unleash your creativity in building modern web applications.
+            </p>
+            
+          </div>
+          <div class="col-md">
+            <img src="img/react.svg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+          
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                <b>How much does it cost to attend?</b>
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                It's completely free of cost to attend.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                <b>What do I need to Know?</b>
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                For our free courses, you don't need any specific prerequisites. They are designed to be accessible to learners of all backgrounds and levels of experience. Simply have an interest in the subject matter, a reliable internet connection, and the enthusiasm to learn, and you're good to go!
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                <b>How Do I sign up?</b>
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                To sign up, you can follow these steps: <br>
+
+1.Visit our website and look for the "Sign Up" or "Register" <br>
+2.Click on it to access the registration. <br>
+3.Fill in your personal information, including your name, email address, and a password. <br>
+4.Follow any additional instructions, such as agreeing to our terms and conditions or verifying your email. <br>
+5.Once you've completed the form and any necessary verification steps, you should be registered and able to log in to your new account.
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                <b>Do you help me find a job? </b>
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                While we provide valuable learning resources through our online free courses, we do not directly assist in job placement. However, the knowledge and skills you gain from our courses can significantly enhance your qualifications and make you more competitive in the job market. Many learners have successfully used their newfound expertise to secure job opportunities. Additionally, we may offer career advice and job search tips to support your employment journey.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- our instructors -->
+    <section id="instructors" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">Our Instructors</h2>
+        <p class="lead text-center text-white mb-5">
+          Our instructors all have 5+ years working as a web developer in the
+          industry
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Glenn Philip</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Kane Williamson</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Steve Smith</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/12.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Mitchell Starc</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <center>
+
+        <section class="p-5">
+          <div class="container">
+            
+              
+                <h2 class="text-center mb-4">Contact Info</h2>
+                <ul class="list-group list-group-flush lead">
+                  <li class="list-group-item">
+                    <span class="fw-bold">Main Location:</span> 50 Main st Fortune Tower
+                  </li>
+                  <li class="list-group-item">
+                    <span class="fw-bold">Enrollment Phone:</span> (91) 99998-99998
+                  </li>
+                  <li class="list-group-item">
+                    <span class="fw-bold">Student Phone:</span> (91) 85859-85859
+                  </li>
+                  <li class="list-group-item">
+                    <span class="fw-bold">Enrollment Email:</span> (91)
+                    enroll@gmail.com
+                  </li>
+                  <li class="list-group-item">
+                    <span class="fw-bold">Student Email:</span>
+                    student@gmail.com
+                  </li>
+                </ul>
+             
+          </div>
+        </section>
+    </center>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2023 Learn<span class="text-warning">HUB</span></p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer> 
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    // JavaScript to toggle the dropdown
+    var icon = document.getElementById("loginIcon");
+
+    icon.addEventListener("click", function() {
+        var dropdownContent = icon.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    });
+</script>
+  </body>
+</html>

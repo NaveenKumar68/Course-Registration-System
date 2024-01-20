@@ -1,0 +1,262 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHUB | Course</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link  href="script.js">
+</head>
+<body class="bg-white">
+    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+          <a href="index.php" class="navbar-brand"><h2>Learn<span class="text-warning">HUB</span></h2></a>
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#fullstack" class="nav-link">Fullstack</a>
+              </li>
+              <li class="nav-item">
+                <a href="#language" class="nav-link">Language</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skill" class="nav-link">Skill</a>
+              </li>
+              <li class="nav-item">
+                <a href="form.php" class="nav-link">Register</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <center>
+        <div class="popup" id="popup-1">
+          <div class="overlay"></div><div class="content">
+            <div class="close-btn align-items-center" onclick="togglePopup()">&times;</div>
+            <h1 id="title" ></h1>
+            <p id="content" > </p>
+          
+          </div>
+        </div>
+        
+      </center>
+      <!-- Full Stack Webdevelopment -->
+      <section class=" p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="fullstack">
+        <div class="container">
+            <h2><b>Full Stack Webdevelopment</b></h2><br>
+            <div class="d-md-flex align-items-center justify-content-between ">
+                <div id="cell">
+                        <img src="https://static.guvi.in/course-thumbnail/webps/htmlcssenglish.webp" alt="" id="ci" onclick="html()">
+                        <a href="form.html" style="text-decoration: none;"><div class="p-3 bg-dark text-light" >
+                         <h3>HTML</h3>
+                         <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 2Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 6545216</p>
+                         <h4><strike>$500</strike><span class="text-success"> Free</span></h4>
+                         </div></a>
+                     
+                     
+                </div>&emsp;
+              
+                <div id="cell">
+                    <img src="https://static.guvi.in/course-thumbnail/webps/htmlcssprojectenglish.webp" alt="" id="ci" onclick="css()">
+                    <div class="p-3 bg-dark text-light">
+                    <h3>CSS</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 3Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 5154662</p>
+                    <h4><strike>$750</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+                <div id="cell">
+                    <img src="https://static.guvi.in/course-thumbnail/webps/advancedjavascriptenglish.webp" alt="" id="ci" onclick="js()">
+                    <div class="p-3 bg-dark text-light">
+                    <h3>JavaScript</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 5Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 6545216</p>
+                    <h4><strike>$1499</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+                <div id="cell">
+                    <img src="https://static.guvi.in/course-thumbnail/webps/bootstraptamiltamil.webp" alt="" id="ci" >
+                    <div class="p-3 bg-dark text-light">
+                    <h3>bootstrap</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 8Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 6545216</p>
+                    <h4><strike>$2499</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+            </div><br><br>
+            <div class="d-sm-flex align-items-center justify-content-between ">
+                <div id="cell">
+                    <img src="https://static.guvi.in/course-thumbnail/webps/jquerybeginnerstoadvancedenglish.webp" alt="" id="ci" >
+                    <div class="p-3 bg-dark text-light">
+                    <h3>JQuery</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 6Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 6545216</p>
+                    <h4><strike>$1499</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+                <div id="cell">
+                    <img src="https://static.guvi.in/course-thumbnail/webps/nodejsenglish.webp" alt="" id="ci" >
+                    <div class="p-3 bg-dark text-light">
+                    <h3>Nodejs</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 8Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 5154662</p>
+                    <h4><strike>$2499</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+                <div id="cell">
+                    <img src="https://static.guvi.in/course-thumbnail/webps/mysqlenglish.webp" alt="" id="ci" >
+                    <div class="p-3 bg-dark text-light">
+                    <h3>MySQL</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 3Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 6545216</p>
+                    <h4><strike>$1499</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+                <div id="cell">
+                    <img src="https://static.guvi.in/course-thumbnail/webps/mongodbenglish.webp" alt="" id="ci" >
+                    <div class="p-3 bg-dark text-light">
+                    <h3>MongoDB</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 17Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 6545216</p>
+                    <h4><strike>$2499</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+            </div><br><br>
+        </div>
+        </section>
+
+            <!-- Popular language -->
+            <section class=" p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="language">
+            <div class="container">
+            <h2><b>Popular Language</b></h2><br>
+            <div class="d-md-flex align-items-center justify-content-between ">
+                <div id="cell">
+                    <img src="https://static.guvi.in/course-thumbnail/c.png" alt="" id="ci" >
+                    <div class="p-3 bg-dark text-light">
+                    <h3>C Programming</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 6Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 6545216</p>
+                    <h4><strike>$500</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+                <div id="cell">
+                    <img src="https://static.guvi.in/course-thumbnail/cplusplus.png" alt="" id="ci" >
+                    <div class="p-3 bg-dark text-light">
+                    <h3>C++ Programming</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 7Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 5154662</p>
+                    <h4><strike>$750</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+                <div id="cell">
+                    <img src="https://static.guvi.in/course-thumbnail/java.png" alt="" id="ci" >
+                    <div class="p-3 bg-dark text-light">
+                    <h3>Java</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 7Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 6545216</p>
+                    <h4><strike>$1499</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+                <div id="cell">
+                    <img src="https://static.guvi.in/course-thumbnail/python.png" alt="" id="ci" >
+                    <div class="p-3 bg-dark text-light">
+                    <h3>Python</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 4Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 6545216</p>
+                    <h4><strike>$499</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+                </div>
+                </div><br><br>
+                </section>
+
+
+                <!-- popular skill -->
+            <section class=" p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="skill">
+                <div class="container">
+            <h2><b>Popular Skills</b></h2><br>
+            <div class="d-md-flex align-items-center justify-content-between ">
+                <div id="cell">
+                    <img src="https://prepinstaprime.com/admin/wp-content/uploads/2022/11/Data-Science-thumb.webp" alt="" id="ci" >
+                    <div class="p-3 bg-dark text-light">
+                    <h3>Data Science</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 7Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 6545216</p>
+                    <h4><strike>$2999</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+                <div id="cell">
+                    <img src="https://prepinstaprime.com/admin/wp-content/uploads/2022/08/Home-Thumb-for-Data-Analytics.webp" alt="" id="ci" >
+                    <div class="p-3 bg-dark text-light">
+                    <h3>Data Analytics</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 3Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 5154662</p>
+                    <h4><strike>$1799</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+                <div id="cell">
+                    <img src="https://prepinstaprime.com/admin/wp-content/uploads/2023/10/AI-and-ML.webp" alt="" id="ci" >
+                    <div class="p-3 bg-dark text-light">
+                    <h3>Artificial Intelligence</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 11Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 6545216</p>
+                    <h4><strike>$1499</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+                <div id="cell">
+                    <img src="https://prepinstaprime.com/admin/wp-content/uploads/2021/07/AWS-Homepage-Icon.webp" alt="" id="ci" >
+                    <div class="p-3 bg-dark text-light">
+                    <h3>AWS Cloud</h3>
+                    <p><img src="https://www.guvi.in/build/images/clock.a8de5715c18f8489e5d52a9fab5ab7fc.svg" alt=""> 9Hrs <img src="https://www.guvi.in/build/images/globe.f1e3ee320b767a2949b071dd554974c7.svg" alt=""> English <img src="https://www.guvi.in/build/images/enrolled.efc153efe81e864c1771c81120eedb5b.svg" alt=""> 6545216</p>
+                    <h4><strike>$1499</strike><span class="text-success"> Free</span></h4>
+                    </div>
+                    
+                </div>&emsp;
+            </div><br><br>
+        </div>
+      </section> 
+      <dialog class="modal" id="modal">
+        <form action="">
+            Name: <input type="text" name="text" id="name">
+            age: <input type="text" name="text" id="age">
+            <input type="submit" name="" id="submit" value="submit" >
+        </form>
+      </dialog>
+      <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+          <p class="lead">Copyright &copy; 2023 <b>Learn<span class="text-warning">HUB</span></b></p>
+  
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+          </a>
+        </div>
+      </footer> 
+      
+</body>
+</html>
